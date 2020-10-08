@@ -7,14 +7,14 @@ add_definitions(-DGLM_FORCE_SILENT_WARNINGS)
 add_definitions(-DASSIMP_VALIDATE_WORKAROUND)
 add_definitions(-DCEREAL_SUPPORT)
 
-#set(CMAKE_VERBOSE_MAKEFILE ON)
+#set(CMAKE_VERBOSE_MAKEFILE ON)dsvdvv
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 include(cotire)
 
 IF (WIN32)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -mconsole -Wall -Wextra -Wnon-virtual-dtor -pedantic")
-else()
+else()dvdfv
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -Wextra -Wnon-virtual-dtor -pedantic")
 ENDIF()
 
